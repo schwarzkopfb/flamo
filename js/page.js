@@ -44,8 +44,13 @@ function initPage() {
         .forEach(function (item) {
             $('[href="#' + item + '"]').click(function (e) {
                 e.preventDefault()
+                
+                var bodyWidth = $body.width(),
+                    correction = bodyWidth > 768 && bodyWidth < 992
+                        ? -58
+                        : 0
 
-                $body.stop().animate({ scrollTop: $('#' + item).offset().top })
+                $body.stop().animate({ scrollTop: $('#' + item).offset().top + correction })
             })
         })
 }
