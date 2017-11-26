@@ -17,7 +17,7 @@ function initPage() {
     initParallax('gallery', 0.3)
     initParallax('menu', 0.2)
     initParallax('team', 0.3)
-    initParallax('contact', 0.1)
+    initParallax('write-to-us', 0.1)
 
     // HIDE MOBILE MENU AFTER CLIKING ON A LINK
     $('.navbar-collapse a').click(function () {
@@ -37,7 +37,9 @@ function initPage() {
         'gallery',
         'menu',
         'team',
-        'contact'
+        'write-to-us',
+        'contact',
+        'offer'
     ]
         .forEach(function (item) {
             $('[href="#' + item + '"]').click(function (e) {
