@@ -53,5 +53,21 @@ function initPage() {
                 $body.stop().animate({ scrollTop: $('#' + item).offset().top + correction })
             })
         })
+
+    // CONTACT FORM
+
+    $('#contact-form').submit(function (e) {
+        e.preventDefault()
+
+        $.ajax({
+            url: 'https://wt-23ab5b12ef02c94babf61d2affacf952-0.run.webtask.io/send-mail',
+            type: 'post',
+            data: $(this).serialize(),
+            success: function() {
+                alert('Köszönjük megkeresését, kollégáink hamarosan felveszik Önnel a kapcsolatot!')
+                $('#write-to-us').hide()
+            }
+        })
+    })
 }
 

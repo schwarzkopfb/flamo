@@ -1,0 +1,22 @@
+{
+  "name": "flamo",
+  "version": "1.0.0",
+  "description": "Website of Flamo Bistro Budapest",
+  "main": "mailer-webtask.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/schwarzkopfb/flamo.git"
+  },
+  "author": "Schwarzkopf Balazs <schwarzkopf@icloud.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/schwarzkopfb/flamo/issues"
+  },
+  "homepage": "https://github.com/schwarzkopfb/flamo#readme",
+  "dependencies": {
+    "sendgrid": "^5.2.3"
+  }
+}
